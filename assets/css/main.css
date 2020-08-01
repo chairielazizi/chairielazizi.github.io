@@ -84,6 +84,8 @@ input, select, textarea {
 
 	body {
 		background: #fff;
+		/* background-image: url(bg.jpg);
+		background-position: center; */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
