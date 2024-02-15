@@ -18,13 +18,13 @@ const About = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           {/* img */}
-          <motion.div
+          {/* <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 bg-about1 bg-contain bg-no-repeat h-[440px] mix-blend-lighten bg-top sm:hidden"
-          ></motion.div>
+          ></motion.div> */}
           {/* text */}
           <motion.div
             variants={fadeIn("left", 0.5)}
@@ -73,12 +73,12 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-x-8 items-center drop-shadow-[100px]">
+            {/* <div className="flex gap-x-8 items-center drop-shadow-[100px]">
               <button className="btn btn-lg">Contact Me</button>
               <a href="#" className="text-gradient1 btn-link">
                 My Portfolio
               </a>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>

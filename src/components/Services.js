@@ -8,31 +8,29 @@ const services = [
   {
     name: "Automation Testing",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur amet blanditiis aliquid commodi voluptatem adipisci veritatis  Officiis, quibusdam.",
+      "Write automation scripts following your requirements and user story. Tools used are inluding Java, Selenium, Cucumber and Eclispe",
     link: "Learn More",
   },
   {
     name: "Manual Testing",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur amet blanditiis aliquid commodi voluptatem adipisci veritatis  Officiis, quibusdam.",
+      "Come out with the test conditions and test coverage from the user requirements. From there, we can proceed to write the test cases and run the tests.",
     link: "Learn More",
   },
   {
     name: "Functional Testing",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur amet blanditiis aliquid commodi voluptatem adipisci veritatis  Officiis, quibusdam.",
+    description: "Non-functional tests can also be created and tested.",
     link: "Learn More",
   },
   {
     name: "Development",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur amet blanditiis aliquid commodi voluptatem adipisci veritatis  Officiis, quibusdam.",
+    description: "Sometimes still do development projects in my free time.",
     link: "Learn More",
   },
   {
     name: "Photo Editing",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur amet blanditiis aliquid commodi voluptatem adipisci veritatis  Officiis, quibusdam.",
+      "I'm a photographer too, and love editing using Lightroom and Snapseed. My main gear is a mirrorless camera Canon R50",
     link: "Learn More",
   },
 ];
@@ -54,7 +52,9 @@ const Services = () => {
             <h3 className="h3 max-w-[455px] mb-16">
               I'm a Software Test Engineer with experience about 1 year plus.
             </h3>
-            <button className="btn btn-sm">See My Work</button>
+            <a href="https://github.com/chairielazizi" target="blank">
+              <button className="btn btn-sm">See My Work</button>
+            </a>
           </motion.div>
           {/* services */}
           <motion.div
@@ -89,9 +89,9 @@ const Services = () => {
                       >
                         <BsArrowUpRight />
                       </a>
-                      <a href="#" className="text-gradient1 text-sm">
+                      {/* <a href="#" className="text-gradient1 text-sm">
                         {link}
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 );
