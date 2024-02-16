@@ -45,7 +45,7 @@ const Nav = () => {
           >
             <BsClipboardData />
           </Link>
-          <Link
+          {/* <Link
             activeClass="active"
             smooth={true}
             spy={true}
@@ -53,7 +53,7 @@ const Nav = () => {
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
             <BsBriefcase />
-          </Link>
+          </Link> */}
           <Link
             activeClass="active"
             smooth={true}
