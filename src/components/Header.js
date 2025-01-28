@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 import Logo from "../assets/logo.png";
 
@@ -10,7 +11,9 @@ const Header = () => {
           <a href="#">
             <img src={Logo} alt="logo" className="logo" />
           </a>
-          <button className="btn btn-sm">Contact Me</button>
+          <Link activeClass="active" smooth={true} spy={true} to="contact">
+            <button className="btn btn-sm">Contact Me</button>
+          </Link>
         </div>
       </div>
     </header>

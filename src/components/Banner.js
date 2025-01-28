@@ -1,7 +1,7 @@
 import React from "react";
 
 import Image from "../assets/riel1.png";
-import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
+import { FaGithub, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -68,7 +68,11 @@ const Banner = () => {
               <Link activeClass="active" smooth={true} spy={true} to="contact">
                 <button className="btn btn-lg">Hit Me Up</button>
               </Link>
-              <a href="#" className="text-gradient1 btn-link">
+              <a
+                href="https://github.com/chairielazizi"
+                target="blank"
+                className="text-gradient1 btn-link"
+              >
                 My Portfolio
               </a>
             </motion.div>
@@ -80,11 +84,14 @@ const Banner = () => {
               className="flex text-[27px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
               {/* social */}
-              <a href="">
+              <a href="https://github.com/chairielazizi" target="blank">
                 <FaGithub />
               </a>
-              <a href="">
-                <FaYoutube />
+              <a
+                href="https://www.linkedin.com/in/chairielazizi/"
+                target="blank"
+              >
+                <FaLinkedin />
               </a>
             </motion.div>
           </div>
