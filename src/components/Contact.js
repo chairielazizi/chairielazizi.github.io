@@ -1,13 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xovjegay");
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleSubmission = (event) => {
+    event.preventDefault();
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const message = event.target.message.value;
+
+    if (name === "" || email === "" || message === "") {
+      setShowAlert(true);
+      setTimeout(() => {
+        setShowAlert(false);
+      }, 3000);
+    } else {
+      handleSubmit(event);
+    }
+  };
 
   if (state.succeeded) {
-    return <p>Thanks for contacting!</p>;
+    return (
+      <section id="contact" className="py-16 lg:section">
+        <div className="container mx-auto">
+          <div className="flex flex-col lg:flex-row">
+            <div className="flex-1 flex justify-center items-center">
+              <p className="text-8xl text-center">Thanks for contacting!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
   }
 
   return (
@@ -38,7 +65,7 @@ const Contact = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
-            onSubmit={handleSubmit}
+            onSubmit={handleSubmission}
           >
             <label htmlFor="name">Your Name</label>
             <input
@@ -46,6 +73,7 @@ const Contact = () => {
               type="text"
               name="name"
               className="bg-transparent border-b py-0 outline-none w-full placeholder:text-white focus:border-accent transition-all"
+              required
             />
             <ValidationError prefix="Name" field="name" errors={state.errors} />
             <label htmlFor="email">Email Address</label>
@@ -54,6 +82,7 @@ const Contact = () => {
               type="email"
               name="email"
               className="bg-transparent border-b py-0 outline-none w-full placeholder:text-white focus:border-accent transition-all"
+              required
             />
             <ValidationError
               prefix="Email"
@@ -65,6 +94,7 @@ const Contact = () => {
               id="message"
               name="message"
               className="bg-transparent border-b py-0 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
+              required
             />
             <ValidationError
               prefix="Message"
@@ -78,6 +108,11 @@ const Contact = () => {
             >
               Send Message
             </button>
+            {showAlert && (
+              <div className="alert alert-error mt-4">
+                Please fill out all fields before submitting.
+              </div>
+            )}
           </motion.form>
         </div>
       </div>

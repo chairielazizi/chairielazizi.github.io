@@ -6,33 +6,29 @@ import { fadeIn } from "../variants";
 
 const services = [
   {
-    name: "Automation Testing",
+    name: "Software Development",
     description:
-      "Write automation scripts following your requirements and user story. Tools used are inluding Java, Selenium, Cucumber and Eclispe",
+      "Technology used are PHP Laravel framework, VueJS, InertiaJS, TailwindCSS, MySQL; ASP.NET Core MVC with C#, Microsoft SQL Server; NodeJS and ReactJS. Software used are Visual Studio Code and Visual Studio 2022.",
     link: "Learn More",
   },
   {
-    name: "Manual Testing",
+    name: "Automation Testing",
+    description:
+      "Write automation scripts following your requirements and user story. Tools used are inluding Java, Selenium, TestNG, JUnit and Eclispe",
+    link: "Learn More",
+  },
+  {
+    name: "Manual Testing & Functional Testing",
     description:
       "Come out with the test conditions and test coverage from the user requirements. From there, we can proceed to write the test cases and run the tests.",
     link: "Learn More",
   },
-  {
-    name: "Functional Testing",
-    description: "Non-functional tests can also be created and tested.",
-    link: "Learn More",
-  },
-  {
-    name: "Development",
-    description: "Sometimes still do development projects in my free time.",
-    link: "Learn More",
-  },
-  {
-    name: "Photo Editing",
-    description:
-      "I'm a photographer too, and love editing using Lightroom and Snapseed. My main gear is a mirrorless camera Canon R50",
-    link: "Learn More",
-  },
+  // {
+  //   name: "Photo Editing",
+  //   description:
+  //     "I'm a photographer too, and love editing using Lightroom and Snapseed. My main gear is a mirrorless camera Canon R50",
+  //   link: "Learn More",
+  // },
 ];
 
 const Services = () => {
@@ -82,17 +78,17 @@ const Services = () => {
                         {description}
                       </p>
                     </div>
-                    <div className="flex flex-col flex-1 items-end">
+                    {/* <div className="flex flex-col flex-1 items-end">
                       <a
                         href="#"
                         className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
                       >
                         <BsArrowUpRight />
                       </a>
-                      {/* <a href="#" className="text-gradient1 text-sm">
+                      <a href="#" className="text-gradient1 text-sm">
                         {link}
-                      </a> */}
-                    </div>
+                      </a>
+                    </div> */}
                   </div>
                 );
               })}

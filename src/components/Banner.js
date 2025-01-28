@@ -42,6 +42,8 @@ const Banner = () => {
                   2000,
                   "Tinkerer",
                   2000,
+                  "Software Developer",
+                  2000,
                 ]}
                 speed={150}
                 className="text-accent1"
@@ -68,13 +70,13 @@ const Banner = () => {
               <Link activeClass="active" smooth={true} spy={true} to="contact">
                 <button className="btn btn-lg">Hit Me Up</button>
               </Link>
-              <a
+              {/* <a
                 href="https://github.com/chairielazizi"
                 target="blank"
                 className="text-gradient1 btn-link"
               >
                 My Portfolio
-              </a>
+              </a> */}
             </motion.div>
             <motion.div
               variants={fadeIn("up", 0.7)}
@@ -85,13 +87,13 @@ const Banner = () => {
             >
               {/* social */}
               <a href="https://github.com/chairielazizi" target="blank">
-                <FaGithub />
+                <FaGithub className="text-5xl" />
               </a>
               <a
                 href="https://www.linkedin.com/in/chairielazizi/"
                 target="blank"
               >
-                <FaLinkedin />
+                <FaLinkedin className="text-5xl" />
               </a>
             </motion.div>
           </div>
