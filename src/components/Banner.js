@@ -36,9 +36,9 @@ const Banner = () => {
               <span className="text-whit mr-4">I am a</span>
               <TypeAnimation
                 sequence={[
-                  "Automation Tester",
-                  2000,
                   "Developer",
+                  2000,
+                  "Automation Tester",
                   2000,
                   "Tinkerer",
                   2000,
@@ -58,7 +58,11 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Just living life like everybody else do.
+              A highly motivated Software Developer with hands-on experience in
+              developing web and mobile applications, using technologies such as
+              Java, C#, ASP.NET, and PHP Laravel framework with Vue JS. Having a
+              one year plus experience as a software test engineer, and now
+              seeking a role in software development.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.7)}
